@@ -181,6 +181,7 @@ export const es: TranslationDict = {
 
   pricing: {
     eyebrow: "Precios",
+    subtitle: "Nuevo en Cripto",
     walletOffer: {
       badge: "Asistencia en vivo",
       title: "Creá tu primera billetera cripto SEGURA",

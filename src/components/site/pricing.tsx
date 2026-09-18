@@ -20,7 +20,7 @@ export function Pricing() {
       <div className="mx-auto max-w-6xl px-4 md:px-6">
         <p className="font-mono text-xs font-semibold tracking-[0.18em] text-[#6D28D9] uppercase">
           {t.pricing.eyebrow}
-        <h2 className="text-3xl font-bold tracking-tight text-balance md:text-4xl">
+        <p className="text-3xl font-bold tracking-tight text-balance md:text-4xl">
           {t.pricing.subtitle}
         </p>
         </p>

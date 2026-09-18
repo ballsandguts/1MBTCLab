@@ -4,6 +4,11 @@ import { Check } from "lucide-react";
 import { useLanguage } from "@/lib/language-context";
 import { cn } from "@/lib/utils";
 
+/**
+ * Pricing split in two parts:
+ *  1) Featured live-assistance wallet onboarding offer (violet card)
+ *  2) "Mapping or Recovery" — the existing three-tier grid
+ */
 export function Pricing() {
   const { t } = useLanguage();
 
@@ -13,11 +18,54 @@ export function Pricing() {
       className="scroll-mt-24 py-20 md:py-24"
     >
       <div className="mx-auto max-w-6xl px-4 md:px-6">
-        <div className="max-w-2xl">
-          <p className="font-mono text-xs font-semibold tracking-[0.18em] text-[#6D28D9] uppercase">
-            {t.pricing.eyebrow}
+        <p className="font-mono text-xs font-semibold tracking-[0.18em] text-[#6D28D9] uppercase">
+          {t.pricing.eyebrow}
+        </p>
+
+        {/* Part 1 — Featured live-assistance offer */}
+        <div className="relative mx-auto mt-8 max-w-3xl rounded-2xl border-2 border-[#0C1210] bg-[#6D28D9] p-7 text-white shadow-hard md:p-9">
+          <span className="absolute -top-3.5 left-6 rounded-full border-2 border-[#0C1210] bg-[#E93BB4] px-3 py-1 font-mono text-[10px] font-bold tracking-[0.14em] text-[#0C1210] uppercase">
+            {t.pricing.walletOffer.badge}
+          </span>
+
+          <h2 className="text-2xl font-bold tracking-tight text-balance md:text-3xl">
+            {t.pricing.walletOffer.title}
+          </h2>
+
+          <p className="mt-4 flex items-baseline gap-2">
+            <span className="font-mono text-5xl font-bold tracking-tight tabular-nums">
+              {t.pricing.walletOffer.price}
+            </span>
+            {t.pricing.walletOffer.period ? (
+              <span className="text-sm text-white/85">
+                {t.pricing.walletOffer.period}
+              </span>
+            ) : null}
           </p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight text-balance md:text-4xl">
+
+          <ul className="mt-6 space-y-3">
+            {t.pricing.walletOffer.features.map((feature) => (
+              <li
+                key={feature}
+                className="flex items-start gap-2.5 text-sm leading-relaxed font-medium"
+              >
+                <Check className="mt-0.5 size-4 shrink-0" aria-hidden="true" />
+                {feature}
+              </li>
+            ))}
+          </ul>
+
+          <a
+            href="#contact"
+            className="mt-8 inline-flex items-center justify-center rounded-xl border-2 border-[#0C1210] bg-white px-6 py-3.5 text-[15px] font-bold text-[#0C1210] shadow-hard-sm transition-all hover:-translate-y-0.5 hover:shadow-hard focus-visible:ring-2 focus-visible:ring-[#6D28D9] focus-visible:ring-offset-2 focus-visible:ring-offset-background"
+          >
+            {t.pricing.walletOffer.cta}
+          </a>
+        </div>
+
+        {/* Part 2 — Mapping or Recovery tiers */}
+        <div className="mt-16 max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-balance md:text-4xl">
             {t.pricing.title}
           </h2>
           <p className="mt-3 leading-relaxed text-muted-foreground">

@@ -8,7 +8,6 @@ import { CtaBand } from "@/components/site/cta-band";
 import { Process } from "@/components/site/process";
 import { WhyUs } from "@/components/site/why-us";
 import { Pricing } from "@/components/site/pricing";
-import { Research } from "@/components/site/research";
 import { Faq } from "@/components/site/faq";
 import { Contact } from "@/components/site/contact";
 import { Footer } from "@/components/site/footer";
@@ -22,15 +21,28 @@ export default function Home() {
         <SkipLink />
         <Navbar />
         <main id="main-content" className="flex-1">
+          {/* Video de YouTube — reemplazá VIDEO_ID por el ID real del video */}
+          <section className="mx-auto w-full max-w-4xl px-4 pt-8 md:px-6 md:pt-10">
+            <div className="aspect-video overflow-hidden rounded-2xl border-2 border-[#0C1210] bg-[#0C1210] shadow-hard">
+              <iframe
+                className="h-full w-full"
+                src="https://www.youtube.com/embed/VIDEO_ID"
+                title="1MBTC Lab video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowFullScreen
+                loading="lazy"
+              />
+            </div>
+          </section>
+
           <Hero />
           <Ticker />
           <Stats />
           <Services />
           <CtaBand />
           <Process />
-          <WhyUs />
           <Pricing />
-          <Research />
+          <WhyUs />
           <Faq />
           <Contact />
         </main>

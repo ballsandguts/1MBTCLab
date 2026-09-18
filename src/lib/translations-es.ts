@@ -181,7 +181,19 @@ export const es: TranslationDict = {
 
   pricing: {
     eyebrow: "Precios",
-    title: "Pagá por análisis y resultados, no por esperanza",
+    walletOffer: {
+      badge: "Asistencia en vivo",
+      title: "Creá tu primera billetera cripto SEGURA",
+      price: "USD 49",
+      period: "pago único",
+      features: [
+        "Sesión 1-a-1 en vivo con nuestro equipo",
+        "Nada de guías o videos prearmados — ayuda real, paso a paso",
+        "Tu billetera creada y lista dentro de la sesión",
+      ],
+      cta: "Reservá tu sesión en vivo",
+    },
+    title: "Mapeo o recuperación",
     description: "Siempre sabés el costo antes de que comience cualquier trabajo.",
     tiers: [
       {

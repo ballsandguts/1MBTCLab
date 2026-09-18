@@ -10,7 +10,6 @@ export function Footer() {
     { href: "#services", label: t.nav.recover },
     { href: "#process", label: t.nav.process },
     { href: "#pricing", label: t.nav.pricing },
-    { href: "#research", label: t.nav.research },
     { href: "#faq", label: t.nav.faq },
   ];
 

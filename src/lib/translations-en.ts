@@ -178,7 +178,19 @@ export const en = {
 
   pricing: {
     eyebrow: "Pricing",
-    title: "Pay for analysis and results — not for hope",
+    walletOffer: {
+      badge: "Live assistance",
+      title: "Create your First SAFE Crypto Wallet",
+      price: "USD 49",
+      period: "one-time",
+      features: [
+        "Real-time 1-on-1 session with our team",
+        "No pre-made guides or videos — live help, step by step",
+        "Your wallet created and ready within the session",
+      ],
+      cta: "Book your live session",
+    },
+    title: "Mapping or Recovery",
     description: "You always know the cost before any work begins.",
     tiers: [
       {

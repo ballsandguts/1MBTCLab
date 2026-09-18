@@ -178,6 +178,7 @@ export const en = {
 
   pricing: {
     eyebrow: "Pricing",
+    subtitle: "New to Crypto",
     walletOffer: {
       badge: "Live assistance",
       title: "Create your First SAFE Crypto Wallet",

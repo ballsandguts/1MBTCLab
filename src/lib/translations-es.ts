@@ -310,6 +310,7 @@ export const es: TranslationDict = {
 
   footer: {
     tagline:
+      poweredBy: "Powered by",
       "Laboratorio independiente de Bitcoin. Onboarding, mapeo, recuperación — investigación, no promesas.",
     navTitle: "Navegación",
     contactTitle: "Contacto",

@@ -306,6 +306,7 @@ export const en = {
 
   footer: {
     tagline:
+      poweredBy: "Powered by",
       "Independent Bitcoin lab. Onboarding, mapping, recovery — research, not promises.",
     navTitle: "Navigate",
     contactTitle: "Contact",

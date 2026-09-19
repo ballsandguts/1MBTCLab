@@ -10,9 +10,9 @@ export const SITE_CONFIG = {
 
   // TODO: Replace with the real WhatsApp number before launch.
   // Format: https://wa.me/<country code + number>
-  whatsappUrl: "https://wa.me/000000000000",
+  whatsappUrl: "https://wa.me/19544255616",
 
   // TODO: Replace with the real Telegram username before launch.
   // Format: https://t.me/<username>
-  telegramUrl: "https://t.me/username_placeholder",
+  telegramUrl: "https://t.me/wwwaiservices",
 } as const;

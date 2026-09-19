@@ -40,7 +40,29 @@ export function Navbar() {
         aria-label={t.a11y.mainNav}
         className="mx-auto flex h-16 max-w-6xl items-center justify-between gap-4 px-4 md:px-6"
       >
-        <Wordmark />
+
+        <div className="flex items-center gap-3">
+          <Wordmark />
+          <span aria-hidden="true" className="h-5 w-px bg-border" />
+          <a
+            href="https://wwwaiservices.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WWW AI Services"
+            className="flex items-center gap-1.5 transition-transform hover:-translate-y-px"
+          >
+            <img
+              src="/wwwai-logo.svg"
+              alt=""
+              width={28}
+              height={28}
+              className="size-7"
+            />
+            <span className="text-sm font-bold tracking-tight text-foreground">
+              WWW AI
+            </span>
+          </a>
+        </div>
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-7 md:flex">

@@ -33,6 +33,29 @@ export function Footer() {
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-muted-foreground">
               {t.footer.tagline}
             </p>
+            <div className="mt-4 flex items-center gap-2">
+                <span className="text-xs text-muted-foreground">
+                  {t.footer.poweredBy}
+                </span>
+                <a
+                href="https://wwwaiservices.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="WWW AI Services"
+                className="flex items-center gap-1.5 transition-opacity hover:opacity-80"
+                >
+                <img
+                  src="/wwwai-logo.svg"
+                  alt=""
+                  width={24}
+                  height={24}
+                  className="size-6"
+                />
+                <span className="text-sm font-bold tracking-tight text-foreground">
+                  WWW AI
+                </span>
+                </a>
+            </div>
           </div>
 
           {/* Navigate */}
